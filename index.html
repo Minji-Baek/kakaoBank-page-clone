@@ -4,9 +4,69 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+  <title>About Minji</title>
 </head>
 <body>
-  
+  <div id="main-img-wrapper">
+    <img width="320" src="./Lovepik_com-401339128-data-management-data-analysis-icon-free-vector-illustration-mate.png" 
+    alt="coding img">
+  </div>
+
+  <div id="intro-main">
+    <p>3년차 프론트 개발자, Min-Ji Baek</p>
+    <p>함께 일해요!</p>
+    <p id="join-us-test">Join Me!</p>
+    <img id="down-arrow-icon" src="./down-arrow.png" alt="down arrow icon">
+  </div>
+
+  <ul id="list-item-wrapper">
+    <li class="list-item">3년차</li>
+    <li class="list-item">VUE</li>
+    <li class="list-item">Front-end개발자</li>
+    <li class="list-item">서울거주</li>
+    <li class="list-item">컴퓨터공학전공</li>
+    <li class="list-item">그래픽스논문</li>
+    <li class="list-item">Git</li>
+    <li class="list-item">React가능</li>
+    <li class="list-item">TypeScript</li>
+    <li class="list-item">JavaScript</li>
+    <li class="list-item">C++</li>
+    <li class="list-item">OpenGL</li>
+    <li class="list-item">OpenCV</li>
+    <li class="list-item">FastCampus</li>
+    <li class="list-item">InteractiveWeb</li>
+    <li class="list-item">Canvas</li>
+    <li class="list-item">Three.js</li>
+    <li class="list-item">Animation</li>
+    <li class="list-item">Figma</li>
+    <li class="list-item">potoshop</li>
+    <li class="list-item">ppt</li>
+    <li class="list-item">svn</li>
+    <li class="list-item">vuetify</li>
+  </ul>
+
 </body>
+
+<script>
+  const listStyleChangeStartY = 373;
+  const listStyleChangeEndY = 1585;
+
+  const listItems = document.querySelectorAll('.list-item');
+
+  // 한 item 당 가지는 scoll 값
+  const division = (listStyleChangeEndY - listStyleChangeStartY) / listItems.length
+    window.addEventListener("scroll", () => {
+    // console.log(document.getElementById("list-item-wrapper").offsetTop)
+
+    if(document.getElementById("on")) document.getElementById("on").removeAttribute("id")
+
+    if(window.scrollY > listStyleChangeStartY && window.scrollY < listStyleChangeEndY ){
+      
+      const targetIndex = Math.round((window.scrollY - listStyleChangeStartY ) / division)
+      if(listItems[targetIndex]) listItems[targetIndex].id="on";
+    }
+
+  })
+</script>
 </html>
