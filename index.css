@@ -46,7 +46,7 @@ table {
 	border-spacing: 0;
 }
 
-/* main */
+/* title */
 
 body {
   background-color: #111111;
@@ -127,19 +127,43 @@ body {
   background-image: url("./icon/light_house.png");
 }
 
-/* main */
+/* santa */
 
 #panel1-img{
   overflow: hidden;
   margin-bottom: 500px;
   position: relative;
-  height: 320px;
+  height: 380px;
   padding-top: 10px;
 }
 
 #flying-santa-image {
   position: absolute;
   right: -80px;
-  height: 310px;
-  transform: translate(80px, -13px) rotate(23deg);
+  height: 350px;
+  transform: translate(100px, -20px) rotate(30deg);
+}
+
+
+/* vedio */
+#video-section {
+  margin-bottom: 1000px;
+}
+
+#video {
+  display: block;
+  margin: 0 auto;
+  height: 350px;
+}
+
+#fixed-description{
+  width: 622px;
+  margin: 30px auto 0;
+  color: white;
+  text-align: right;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 50px;
+  opacity: 0;
+  transform: translateY(100px);
 }
