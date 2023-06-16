@@ -5,6 +5,8 @@
   
   이직을 준비 중인 내 상황에 맞게 포토폴리오 느낌으로 만들 수 있는 부분은 포폴 느낌으로 클론 page로 만들었다. 
 
+  https://minji-baek.github.io/kakaoBank-page-clone/
+
   <img src="./readMeImg/full.gif">
 
 
