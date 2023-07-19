@@ -111,7 +111,7 @@ body {
 
 .list-item::before {
   display: inline-block;
-  background-image: url('./icon/dark_house.png');
+  background-image: url('./public/icon/dark_house.png');
   background-size: 51px 53px;
   /* 가상선택자 할떄 많이 쓰이는 스킬임 */
   content: "";
@@ -124,7 +124,7 @@ body {
 }
 
 .list-item#on::before {
-  background-image: url("./icon/light_house.png");
+  background-image: url("./public/icon/light_house.png");
 }
 
 /* santa */
